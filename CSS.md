@@ -120,16 +120,51 @@
 - div span {} : div의 밑의 모든 span을 찾아 효과를 주기
 - div > span {} : div의 바로밑의 span만 찾아 효과를 주기
 - div + span {} : div의 형제 중 span을 찾아 효과를 주기
+- div ~ span {} : 바로 다음에 오지않아도 되는 형제 관계
 
 
 
+## Colors and Variables
+
+- CSS 에서 알아야할 color system
+
+  1. hexadecimal color (16진수 컬러) : #000000의 형태
+  2. RGB 방식 (디자이너들이 주로 사용) : rgb(252,206,0); 의 형태
+  3. rgba(a,b,c,d); → a는 투명도를 뜻함
+
+- Variable을 통해 CSS를 프로그래밍 언어처럼 사용
+
+  1. :root에 변수를 추가. root는 모든 document의 뿌리가 된다
+
+  2. "--변수이름 : ..." 의 형태로 사용, 빈칸은 - 로 채운다
+
+  3. 변수를 사용할 곳에 var(이름); 형태로 사용
 
 
 
+## Recap
 
-
-
-
+1. combinator
+   - p span{} 부모자식관계
+   - p>span{} 부모와 바로 밑 자식관계
+   - p+span{} 바로 다음에 오는 형제관계
+   - p~span{} 바로 다음에 오지 않아도 되는 형제관계
+2. attribute
+   - input[type="word"]{} type="word"인 input만을 선택
+   - input[type~="word"]{} "word"를 포함하는 input선택
+   - input[type$="word"]{} 끝에 "word"가 오는 input 선택
+   - input[type^="word"]{} 앞에 "word"가 오는 input 선택
+3. state
+   - :hover 커서가 올라간상태
+   - :active 클릭할때
+   - :focus 키보드로 선택한경우
+   - :visited link에서 쓰이고 사이트를 방문한 이력이 있을경우
+   - :focus-within 자식들중 하나라도 focus상태에 있다면 부모가 바뀔때 쓰임
+4. pseudo element
+   - ::placeholder placehoder만을 꾸밀때 사용
+   - ::selection 드래그 했을때
+   - ::first-letter 앞 글자에
+   - ::first-line 첫 줄
 
 
 
