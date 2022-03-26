@@ -3,28 +3,52 @@
 }
 
 body {
-  height: 100vh;
+  height: 150vh;
   width: 100vw;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  background-color: beige;
 }
 
 body > div {
   height: 80vh;
   width: 30vw;
-  background-color: tomato;
+  background-color: white;
   border-radius: 30px;
   display: flex;
   flex-direction: column;
 }
 header {
-  background-color: teal;
-  height: 7vh;
-  margin: 10% 10% 0% 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: teal; */
+  height: 6vh;
+  margin: 10% 15% 0% 15%;
 }
+
+.span__title--big {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.span__title {
+  font-weight: bold;
+}
+
+.span__sub--big {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 15px;
+}
+
+.span__sub {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 12px;
+}
+
 .div__inner--first {
-  height: 32vh;
+  height: 30vh;
   margin: 0% 10%;
   background-color: white;
   display: flex;
@@ -38,25 +62,87 @@ header {
   justify-content: space-evenly;
 }
 .img1 {
-  width: 70px;
-  height: 70px;
+  border-radius: 20px;
+  width: 90px;
+  height: 90px;
 }
 .div__inner--second {
-  height: 31vh;
+  height: 35vh;
   margin: 0% 10%;
-  background-color: bisque;
+  padding: 10%;
+  border-radius: 40px;
+  /* background-color: whitesmoke; */
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
 }
 
-.div__inner--third {
+.div__list {
   height: 10vh;
-  width: 24vw;
-  background-color: cadetblue;
-  position: fixed;
-  top: 450px;
-  left: 167px;
+  width: 23vw;
+  /* background-color: dimgrey; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* .div__list div */
+
+.div__inner--small {
+  padding-right: 10%;
+  margin: 10% 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.div__list img {
   border-radius: 30px;
+  height: 40px;
+  width: 40px;
+}
+
+.div__inner--third {
+  height: 9vh;
+  width: 24vw;
+  background-color: wheat;
+  position: fixed;
+  top: 75vh;
+  left: 15vw;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* second box  */
+
+span {
+  margin: 2px 0px;
+}
+
+.div__inner2--first {
+  height: 50vh;
+  margin: 0% 10%;
+  /* background-color: teal; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img__big {
+  border-radius: 20%;
+  height: 180px;
+  width: 180px;
+  margin: 5% 10%;
+}
+
+.div__inner2--second {
+  height: 15vh;
+  margin: 0% 10%;
+  background-color: bisque;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
